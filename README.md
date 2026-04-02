@@ -2,9 +2,9 @@
 
 ## 1. Thong tin sinh vien
 
-- Ho va ten: `[DIEN HO TEN]`
-- MSSV: `[DIEN MSSV]`
-- Lop: `[DIEN LOP]`
+- Ho va ten: `Trần Thiện Long`
+- MSSV: `24120373`
+- Lop: `24CTT4`
 
 ## 2. Ten mo hinh va lien ket
 
