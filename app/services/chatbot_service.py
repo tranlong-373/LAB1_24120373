@@ -24,7 +24,7 @@ class ChatbotService:
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self._tokenizer = None
         self._model = None
-        self.system_prompt = "Ban la tro ly AI than thien. Hay tra loi ro rang, ngan gon va de hieu."
+        self.system_prompt = "Bạn là trợ lí AI hỏi đáp thân thiện, hãy trả lời rõ ràng, ngắn gọn và dễ hiểu!."
 
     def _load_model(self) -> None:
         if self._tokenizer is not None and self._model is not None:
@@ -38,7 +38,7 @@ class ChatbotService:
         self._model.to(self.device)
         self._model.eval()
 
-    def is_ready(self) -> bool:
+    def is_ready(self) -> bool: #endpont health check
         return self._tokenizer is not None and self._model is not None
 
     def get_model_name(self) -> str:
@@ -47,7 +47,7 @@ class ChatbotService:
     def generate(self, message: str) -> str:
         cleaned_message = message.strip()
         if not cleaned_message:
-            raise ValueError("Truong 'message' khong duoc de rong.")
+            raise ValueError("'Message' Không được để trống hoặc chỉ chứa khoảng trắng.")
 
         self._load_model()
 
@@ -78,7 +78,7 @@ class ChatbotService:
         result = self._tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
 
         if not result:
-            raise RuntimeError("Model khong tao duoc noi dung tra loi.")
+            raise RuntimeError("Model không tạo được nội dung trả lời.")
 
         return result
 

@@ -14,8 +14,8 @@ def call_api(method: str, path: str, **kwargs) -> requests.Response:
         return requests.request(method, url, timeout=TIMEOUT, **kwargs)
     except requests.RequestException as exc:
         pytest.fail(
-            f"Khong the ket noi toi API tai {url}. "
-            f"Hay chay uvicorn truoc khi test. Chi tiet: {exc}"
+            f"Không thẻ kết nối API tại {url}. "
+            f"Hãy chạy uvicorn trước khi test. Chi tiết: {exc}"
         )
 
 
@@ -39,11 +39,11 @@ def test_health() -> None:
 def test_generate_empty_message() -> None:
     response = call_api("POST", "/generate", json={"message": ""})
     assert response.status_code == 400
-    assert "khong duoc de rong" in response.json()["detail"]
+    assert "Không được để trống" in response.json()["detail"]
 
 
 def test_generate_valid_message() -> None:
-    prompt = "Hay gioi thieu ngan gon ve FastAPI."
+    prompt = "Hãy giới thiệu về bản thân bạn."
     response = call_api("POST", "/generate", json={"message": prompt})
     assert response.status_code == 200, response.text
     data = response.json()

@@ -11,7 +11,7 @@ def root():
     return {
         "name": "AI Chatbot API",
         "model": chatbot_service.get_model_name(),
-        "message": "API dang hoat dong.",
+        "message": "API đang hoạc động.",
         "endpoints": ["/", "/health", "/generate"],
     }
 
@@ -19,7 +19,7 @@ def root():
 @app.get("/health")
 def health():
     return {
-        "status": "ok",
+        "status": "ok - API đang hoạt động.",
         "model": chatbot_service.get_model_name(),
         "loaded": chatbot_service.is_ready(),
     }
@@ -28,7 +28,7 @@ def health():
 @app.post("/generate", response_model=GenerateResponse)
 def generate(request: GenerateRequest):
     if not request.message.strip():
-        raise HTTPException(status_code=400, detail="Truong 'message' khong duoc de rong.")
+        raise HTTPException(status_code=400, detail="'Message' Không được để trống hoặc chỉ chứa khoảng trắng.")
 
     try:
         output_text = chatbot_service.generate(request.message)
@@ -37,7 +37,7 @@ def generate(request: GenerateRequest):
     except Exception as exc:
         raise HTTPException(
             status_code=500,
-            detail=f"Loi khi sinh cau tra loi tu model: {exc}",
+            detail=f"Lỗi khi sinh câu trả lời từ Model: {exc}",
         ) from exc
 
     return GenerateResponse(
