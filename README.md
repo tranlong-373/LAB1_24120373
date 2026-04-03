@@ -105,6 +105,6 @@ Pinggy sẽ cung cấp một đường dẫn public để truy cập từ Intern
 
 - Ví dụ: `https://xxxxx.pinggy.link/docs`
 
-## 8. Lien ket video demo
+## 8. Video demo
 
-- Video demo: `[DIEN LINK VIDEO DEMO]`
+[Video demo].(./video_demo.mp4)
