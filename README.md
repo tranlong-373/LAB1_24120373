@@ -107,4 +107,4 @@ Pinggy sẽ cung cấp một đường dẫn public để truy cập từ Intern
 
 ## 8. Video demo
 
-[![Xem video](https://techvccloud.mediacdn.vn/280518386289090560/2021/7/5/api-la-gi-1-640x322-16254795881731210500168-0-30-322-603-crop-16254795955021767193036.jpg)](https://www.youtube.com/watch?v=_5tFXJQIzi4)
+[![Xem video](https://techvccloud.mediacdn.vn/280518386289090560/2021/7/5/api-la-gi-1-640x322-16254795881731210500168-0-30-322-603-crop-16254795955021767193036.jpg)](https://youtu.be/aWLfDh3C-js?si=zlSrjjm-IKelPijr)
