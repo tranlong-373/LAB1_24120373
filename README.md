@@ -15,6 +15,8 @@
 
 Project này xây dựng một hệ thống chatbot API bằng FastAPI. API có nhiệm vụ tiếp nhận nội dung từ người dùng, gọi mô hình ngôn ngữ được cung cấp trên Hugging Face thông qua thư viện Transformers, và trả về kết quả dưới định dạng JSON.
 
+Mô hình là một chatbot hỏi đáp, Người dùng có thể hỏi và chatbot đưa ra câu trả lời.
+
 ## 4. Hướng dẫn cài đặt
 
 Tạo môi trường ảo, kích hoạt môi trường và cài đặt các thư viện cần thiết:
