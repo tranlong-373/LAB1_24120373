@@ -34,8 +34,9 @@ uvicorn app.main:app --reload
 ```
 
 sau khi chạy có thẻ mở các địa chỉ để kiểm tra:
-- API: http://127.0.0.1:8000
-- docs: http://127.0.0.1:8000/docs
+
+- API: <http://127.0.0.1:8000>
+- docs: <http://127.0.0.1:8000/docs>
 
 Chạy test API:
 
@@ -59,6 +60,15 @@ curl http://127.0.0.1:8000/health
 
 ### POST /generate
 
+## Có 2 cách test
+
+- Cách 1: dùng curl
+
+```
+curl -X POST "http://127.0.0.1:8000/generate" -H "Content-Type: application/json" -d "{\"message\":\"Hãy giới thiệu ngắn gọn về FastAPI.\"}"
+```
+
+- Cách 2: Lên docs để thao tác
 Request:
 
 ```json
@@ -73,7 +83,7 @@ Response:
 {
   "model": "Qwen/Qwen2.5-0.5B-Instruct",
   "input": "Hãy giới thiệu về bản thân bạn.",
-  "output": "FastAPI là framework Python hiện đại giúp xây dựng API nhanh và dễ phát triển."
+  "output": "Xin chào! Tôi là một trợ lý AI được tạo ra để giúp đỡ người dùng trong nhiều lĩnh vực khác nhau như tư vấn, hỗ trợ giải trí và nhiều hơn nữa. Tôi rất vui được lắng nghe và chia sẻ thông tin với mọi người."
 }
 ```
 
