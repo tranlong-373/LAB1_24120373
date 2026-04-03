@@ -107,4 +107,4 @@ Pinggy sẽ cung cấp một đường dẫn public để truy cập từ Intern
 
 ## 8. Video demo
 
-[![Xem video](https://youtu.be/aWLfDh3C-js)](https://youtu.be/aWLfDh3C-js)
+[![https://www.shutterstock.com/vi/search/api-code](https://youtu.be/aWLfDh3C-js)](https://youtu.be/aWLfDh3C-js)
