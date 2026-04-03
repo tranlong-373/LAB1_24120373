@@ -107,4 +107,4 @@ Pinggy sẽ cung cấp một đường dẫn public để truy cập từ Intern
 
 ## 8. Video demo
 
-[![https://www.shutterstock.com/vi/search/api-code](https://youtu.be/aWLfDh3C-js)](https://youtu.be/aWLfDh3C-js)
+[![https://media.istockphoto.com/id/1442100383/vi/vec-to/giao-di%E1%BB%87n-l%E1%BA%ADp-tr%C3%ACnh-%E1%BB%A9ng-d%E1%BB%A5ng.jpg?s=612x612&w=0&k=20&c=vcd3HfXN05f8PGtZWvpynm_Lc4KcHTNr6KxCGeyK81Q=](https://youtu.be/aWLfDh3C-js)](https://youtu.be/aWLfDh3C-js)
