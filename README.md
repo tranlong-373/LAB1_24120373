@@ -62,13 +62,14 @@ curl http://127.0.0.1:8000/health
 
 ## Có 2 cách test
 
-- Cách 1: dùng curl
+- Cách 1: Dùng curl
 
-```
+```bash
 curl -X POST "http://127.0.0.1:8000/generate" -H "Content-Type: application/json" -d "{\"message\":\"Hãy giới thiệu ngắn gọn về FastAPI.\"}"
 ```
 
 - Cách 2: Lên docs để thao tác
+
 Request:
 
 ```json
@@ -97,6 +98,10 @@ Sau khi API đang chạy ở `localhost:8000`, mở một terminal khác và ch�
 ```bash
 ssh -p 443 -R0:127.0.0.1:8000 free.pinggy.io
 ```
+
+Pinggy sẽ cung cấp một đường dẫn public để truy cập từ Internet
+
+- Ví dụ: `https://xxxxx.pinggy.link/docs`
 
 ## 8. Lien ket video demo
 
