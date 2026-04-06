@@ -35,7 +35,7 @@ Chạy API:
 uvicorn app.main:app --reload
 ```
 
-sau khi chạy có thẻ mở các địa chỉ để kiểm tra:
+sau khi chạy có thể mở các địa chỉ để kiểm tra:
 
 - API: <http://127.0.0.1:8000>
 - docs: <http://127.0.0.1:8000/docs>
@@ -109,4 +109,4 @@ Pinggy sẽ cung cấp một đường dẫn public để truy cập từ Intern
 
 - Click vào để xem demo
 
-[![Xem video](https://techvccloud.mediacdn.vn/280518386289090560/2021/7/5/api-la-gi-1-640x322-16254795881731210500168-0-30-322-603-crop-16254795955021767193036.jpg)](https://youtu.be/aWLfDh3C-js?si=zlSrjjm-IKelPijr)
+[![Xem video](https://techvccloud.mediacdn.vn/280518386289090560/2021/7/5/api-la-gi-1-640x322-16254795881731210500168-0-30-322-603-crop-16254795955021767193036.jpg)](https://youtu.be/ryvlm8A-D-U)
